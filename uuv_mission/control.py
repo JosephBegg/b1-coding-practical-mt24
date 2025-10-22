@@ -23,3 +23,12 @@ class PDController:
         u = self.Kp * error + self.Kd * derivative
         self.prev_error = error
         return u
+    
+    def reset(self):
+        """Reset controller’s internal state so a new run starts clean."""
+        self.prev_error = 0.0
+        
+        
+
+    
+    
